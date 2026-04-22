@@ -93,14 +93,15 @@ module "complete" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
+| <a name="requirement_alicloud"></a> [alicloud](#requirement\_alicloud) | >= 1.200.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | n/a |
-| <a name="provider_alicloud.local_region"></a> [alicloud.local\_region](#provider\_alicloud.local\_region) | n/a |
-| <a name="provider_alicloud.remote_region"></a> [alicloud.remote\_region](#provider\_alicloud.remote\_region) | n/a |
+| <a name="provider_alicloud"></a> [alicloud](#provider\_alicloud) | >= 1.200.0 |
+| <a name="provider_alicloud.local_region"></a> [alicloud.local\_region](#provider\_alicloud.local\_region) | >= 1.200.0 |
+| <a name="provider_alicloud.remote_region"></a> [alicloud.remote\_region](#provider\_alicloud.remote\_region) | >= 1.200.0 |
 
 ## Modules
 
@@ -113,40 +114,40 @@ module "complete" {
 
 | Name | Type |
 |------|------|
-| [alicloud_cen_instance.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_instance) | resource |
-| [alicloud_cen_transit_router.local](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router) | resource |
-| [alicloud_cen_transit_router.remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router) | resource |
-| [alicloud_cen_transit_router_peer_attachment.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_peer_attachment) | resource |
-| [alicloud_cen_transit_router_route_table_association.beijing_peer_attachment](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
-| [alicloud_cen_transit_router_route_table_association.shanghai_peer_attachment](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
-| [alicloud_cen_transit_router_route_table_propagation.beijing_peer_propagation](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
-| [alicloud_cen_transit_router_route_table_propagation.shanghai_peer_propagation](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
-| [alicloud_privatelink_vpc_endpoint.dashscope_endpoint](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/privatelink_vpc_endpoint) | resource |
-| [alicloud_privatelink_vpc_endpoint_zone.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/privatelink_vpc_endpoint_zone) | resource |
-| [alicloud_pvtz_zone.dashscope_pvtz_zone](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/pvtz_zone) | resource |
-| [alicloud_pvtz_zone_attachment.remote_vpc_attachment](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/pvtz_zone_attachment) | resource |
-| [alicloud_pvtz_zone_record.dashscope_cname_record](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/pvtz_zone_record) | resource |
-| [alicloud_security_group.this](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/security_group) | resource |
-| [alicloud_security_group_rule.http_ingress_rule](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/security_group_rule) | resource |
-| [alicloud_security_group_rule.https_ingress_rule](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/resources/security_group_rule) | resource |
-| [alicloud_cen_transit_router_route_tables.local](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
-| [alicloud_cen_transit_router_route_tables.remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
-| [alicloud_regions.remote](https://registry.terraform.io/providers/hashicorp/alicloud/latest/docs/data-sources/regions) | data source |
+| [alicloud_cen_instance.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_instance) | resource |
+| [alicloud_cen_transit_router.local](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router) | resource |
+| [alicloud_cen_transit_router.remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router) | resource |
+| [alicloud_cen_transit_router_peer_attachment.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_peer_attachment) | resource |
+| [alicloud_cen_transit_router_route_table_association.beijing_peer_attachment](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
+| [alicloud_cen_transit_router_route_table_association.shanghai_peer_attachment](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_association) | resource |
+| [alicloud_cen_transit_router_route_table_propagation.beijing_peer_propagation](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
+| [alicloud_cen_transit_router_route_table_propagation.shanghai_peer_propagation](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/cen_transit_router_route_table_propagation) | resource |
+| [alicloud_privatelink_vpc_endpoint.dashscope_endpoint](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/privatelink_vpc_endpoint) | resource |
+| [alicloud_privatelink_vpc_endpoint_zone.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/privatelink_vpc_endpoint_zone) | resource |
+| [alicloud_pvtz_zone.dashscope_pvtz_zone](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/pvtz_zone) | resource |
+| [alicloud_pvtz_zone_attachment.remote_vpc_attachment](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/pvtz_zone_attachment) | resource |
+| [alicloud_pvtz_zone_record.dashscope_cname_record](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/pvtz_zone_record) | resource |
+| [alicloud_security_group.this](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/security_group) | resource |
+| [alicloud_security_group_rule.http_ingress_rule](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/security_group_rule) | resource |
+| [alicloud_security_group_rule.https_ingress_rule](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/resources/security_group_rule) | resource |
+| [alicloud_cen_transit_router_route_tables.local](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
+| [alicloud_cen_transit_router_route_tables.remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/data-sources/cen_transit_router_route_tables) | data source |
+| [alicloud_regions.remote](https://registry.terraform.io/providers/aliyun/alicloud/latest/docs/data-sources/regions) | data source |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_cen_instance_config"></a> [cen\_instance\_config](#input\_cen\_instance\_config) | The parameters of cen instance. | <pre>object({<br>    cen_instance_name = optional(string, "main_cen_instance")<br>    description       = optional(string, null)<br>    protection_level  = optional(string, "REDUCED")<br>  })</pre> | `{}` | no |
-| <a name="input_local_tr_config"></a> [local\_tr\_config](#input\_local\_tr\_config) | The parameters of local transit router. | <pre>object({<br>    transit_router_name        = optional(string, "local-tr")<br>    transit_router_description = optional(string, null)<br>  })</pre> | `{}` | no |
-| <a name="input_local_vpc_config"></a> [local\_vpc\_config](#input\_local\_vpc\_config) | The parameters of local vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>object({<br>    vpc = object({<br>      cidr_block = string<br>      vpc_name   = optional(string, null)<br>    })<br>    vswitches = list(object({<br>      zone_id      = string<br>      cidr_block   = string<br>      vswitch_name = optional(string, null)<br>    }))<br>    tr_vpc_attachment = optional(object({<br>      transit_router_attachment_name        = optional(string, null)<br>      transit_router_attachment_description = optional(string, null)<br>      auto_publish_route_enabled            = optional(bool, true)<br>    }), {})<br>  })</pre> | n/a | yes |
-| <a name="input_privatelink_vpc_endpoint"></a> [privatelink\_vpc\_endpoint](#input\_privatelink\_vpc\_endpoint) | The parameters of privatelink vpc endpoint. | <pre>object({<br>    service_name      = optional(string, "com.aliyuncs.dashscope")<br>    vpc_endpoint_name = optional(string, "pvltest_dashscope_endpoint")<br>  })</pre> | `{}` | no |
+| <a name="input_cen_instance_config"></a> [cen\_instance\_config](#input\_cen\_instance\_config) | The parameters of cen instance. | <pre>object({<br/>    cen_instance_name = optional(string, "main_cen_instance")<br/>    description       = optional(string, null)<br/>    protection_level  = optional(string, "REDUCED")<br/>  })</pre> | `{}` | no |
+| <a name="input_local_tr_config"></a> [local\_tr\_config](#input\_local\_tr\_config) | The parameters of local transit router. | <pre>object({<br/>    transit_router_name        = optional(string, "local-tr")<br/>    transit_router_description = optional(string, null)<br/>  })</pre> | `{}` | no |
+| <a name="input_local_vpc_config"></a> [local\_vpc\_config](#input\_local\_vpc\_config) | The parameters of local vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>object({<br/>    vpc = object({<br/>      cidr_block = string<br/>      vpc_name   = optional(string, null)<br/>    })<br/>    vswitches = list(object({<br/>      zone_id      = string<br/>      cidr_block   = string<br/>      vswitch_name = optional(string, null)<br/>    }))<br/>    tr_vpc_attachment = optional(object({<br/>      transit_router_attachment_name        = optional(string, null)<br/>      transit_router_attachment_description = optional(string, null)<br/>      auto_publish_route_enabled            = optional(bool, true)<br/>    }), {})<br/>  })</pre> | n/a | yes |
+| <a name="input_privatelink_vpc_endpoint"></a> [privatelink\_vpc\_endpoint](#input\_privatelink\_vpc\_endpoint) | The parameters of privatelink vpc endpoint. | <pre>object({<br/>    service_name      = optional(string, "com.aliyuncs.dashscope")<br/>    vpc_endpoint_name = optional(string, "pvltest_dashscope_endpoint")<br/>  })</pre> | `{}` | no |
 | <a name="input_pvtz_zone_name"></a> [pvtz\_zone\_name](#input\_pvtz\_zone\_name) | The name of pvtz zone. | `string` | `"vpc-cn-beijing.dashscope.aliyuncs.com"` | no |
-| <a name="input_pvtz_zone_record"></a> [pvtz\_zone\_record](#input\_pvtz\_zone\_record) | The parameters of pvtz zone record. | <pre>object({<br>    rr     = optional(string, "@")<br>    type   = optional(string, "CNAME")<br>    ttl    = optional(number, 15)<br>    status = optional(string, "ENABLE")<br>  })</pre> | `{}` | no |
-| <a name="input_remote_tr_config"></a> [remote\_tr\_config](#input\_remote\_tr\_config) | The parameters of remote transit router. | <pre>object({<br>    transit_router_name        = optional(string, "remote-tr")<br>    transit_router_description = optional(string, null)<br>  })</pre> | `{}` | no |
-| <a name="input_remote_vpc_config"></a> [remote\_vpc\_config](#input\_remote\_vpc\_config) | The parameters of remote vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>object({<br>    vpc = object({<br>      cidr_block = string<br>      vpc_name   = optional(string, null)<br>    })<br>    vswitches = list(object({<br>      zone_id      = string<br>      cidr_block   = string<br>      vswitch_name = optional(string, null)<br>    }))<br>    tr_vpc_attachment = optional(object({<br>      transit_router_attachment_name = optional(string, null)<br>      auto_publish_route_enabled     = optional(bool, true)<br>    }), {})<br>  })</pre> | n/a | yes |
-| <a name="input_security_group_config"></a> [security\_group\_config](#input\_security\_group\_config) | The parameters of security group. | <pre>object({<br>    security_group_name = optional(string, "main-security-group")<br>    description         = optional(string, "for Privatelink")<br>  })</pre> | `{}` | no |
-| <a name="input_tr_peer_attachment"></a> [tr\_peer\_attachment](#input\_tr\_peer\_attachment) | The parameters of transit router peer attachment. | <pre>object({<br>    transit_router_attachment_name = optional(string, "TR-Peer-Attachment")<br>    auto_publish_route_enabled     = optional(bool, true)<br>    bandwidth_type                 = optional(string, "DataTransfer")<br>    bandwidth                      = optional(number, 10)<br><br>  })</pre> | `{}` | no |
+| <a name="input_pvtz_zone_record"></a> [pvtz\_zone\_record](#input\_pvtz\_zone\_record) | The parameters of pvtz zone record. | <pre>object({<br/>    rr     = optional(string, "@")<br/>    type   = optional(string, "CNAME")<br/>    ttl    = optional(number, 15)<br/>    status = optional(string, "ENABLE")<br/>  })</pre> | `{}` | no |
+| <a name="input_remote_tr_config"></a> [remote\_tr\_config](#input\_remote\_tr\_config) | The parameters of remote transit router. | <pre>object({<br/>    transit_router_name        = optional(string, "remote-tr")<br/>    transit_router_description = optional(string, null)<br/>  })</pre> | `{}` | no |
+| <a name="input_remote_vpc_config"></a> [remote\_vpc\_config](#input\_remote\_vpc\_config) | The parameters of remote vpc resources. The attributes 'vpc', 'vswitches' are required. | <pre>object({<br/>    vpc = object({<br/>      cidr_block = string<br/>      vpc_name   = optional(string, null)<br/>    })<br/>    vswitches = list(object({<br/>      zone_id      = string<br/>      cidr_block   = string<br/>      vswitch_name = optional(string, null)<br/>    }))<br/>    tr_vpc_attachment = optional(object({<br/>      transit_router_attachment_name = optional(string, null)<br/>      auto_publish_route_enabled     = optional(bool, true)<br/>    }), {})<br/>  })</pre> | n/a | yes |
+| <a name="input_security_group_config"></a> [security\_group\_config](#input\_security\_group\_config) | The parameters of security group. | <pre>object({<br/>    security_group_name = optional(string, "main-security-group")<br/>    description         = optional(string, "for Privatelink")<br/>  })</pre> | `{}` | no |
+| <a name="input_tr_peer_attachment"></a> [tr\_peer\_attachment](#input\_tr\_peer\_attachment) | The parameters of transit router peer attachment. | <pre>object({<br/>    transit_router_attachment_name = optional(string, "TR-Peer-Attachment")<br/>    auto_publish_route_enabled     = optional(bool, true)<br/>    bandwidth_type                 = optional(string, "DataTransfer")<br/>    bandwidth                      = optional(number, 10)<br/><br/>  })</pre> | `{}` | no |
 
 ## Outputs
 
